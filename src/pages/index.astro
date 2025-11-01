@@ -1,11 +1,17 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "@layouts/Layout.astro";
+import SkipLink from "@utils/SkipLink.astro";
+import DeleteMe from "@components/DeleteMe.astro";
+import BackToTop from "@utils/BackToTop.astro";
+import WeddingDeets from "@components/WeddingDeets.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Sean And Annalise are getting Married!!">
+  <SkipLink />
+  <div class="sr-only" id="start"></div>
+  <WeddingDeets />
+  <section aria-label="Utilities">
+    <!-- You could also add a theme switch here or anything considered a utility -->
+    <BackToTop />
+  </section>
 </Layout>
