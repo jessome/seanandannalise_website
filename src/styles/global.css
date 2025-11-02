@@ -19,6 +19,22 @@
     src: url("/fonts/inter-v13-latin-regular.woff2") format("woff2");
   }
 
+  @font-face {
+    font-display: swap;
+    font-family: "Corinthia";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Corinthia-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Corinthia_Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Corinthia-Bold.woff2") format("woff2");
+  }
+
   /* Focus behaviour */
 
   :is(a, button, input, textarea, summary) {
@@ -59,7 +75,7 @@
   h1,
   h2 {
     color: light-dark(var(--color-black), var(--color-white));
-    font-family: "Anybody", sans-serif;
+    font-family: "Corinthia_Bold", sans-serif;
   }
 
   h1 {
