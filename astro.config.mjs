@@ -7,7 +7,7 @@ export default defineConfig({
       "Cross-Origin-Opener-Policy": "same-origin",
       "Cross-Origin-Resource-Policy": "cross-origin",
       "Content-Security-Policy":
-        "default-src * https://astro-naut.statichost.eu/; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://astro-naut.statichost.eu/ data:",
+        "default-src * https://sean-and-annalise.ca/; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://sean-and-annalise.ca data:",
       "Permissions-Policy": "geolocation=(), camera=(), microphone=()",
       "Referrer-Policy": "strict-origin-when-cross-origin",
       "Upgrade-Insecure-Requests": "1",
@@ -15,5 +15,5 @@ export default defineConfig({
       "X-Frame-Options": "DENY",
     },
   },
-  site: "https://astro-naut.statichost.eu/",
+  site: "https://sean-and-annalise.ca/",
 });
