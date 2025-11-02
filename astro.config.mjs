@@ -3,7 +3,7 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   server: {
     headers: {
-      "Cross-Origin-Embedder-Policy": "require-corp",
+      //"Cross-Origin-Embedder-Policy": "require-corp",
       "Cross-Origin-Opener-Policy": "same-origin",
       "Cross-Origin-Resource-Policy": "cross-origin",
       "Content-Security-Policy":
@@ -11,8 +11,8 @@ export default defineConfig({
       "Permissions-Policy": "geolocation=(), camera=(), microphone=()",
       "Referrer-Policy": "strict-origin-when-cross-origin",
       "Upgrade-Insecure-Requests": "1",
-      "X-Content-Type-Options": "nosniff",
-      "X-Frame-Options": "DENY",
+      //"X-Content-Type-Options": "nosniff",
+      //"X-Frame-Options": "DENY",
     },
   },
   site: "https://sean-and-annalise.ca/",

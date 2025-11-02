@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import ExternalLink from "@utils/ExternalLink.astro";
+import MapDisplay from "@utils/MapDisplay.astro";
 import codeberg from "@images/codeberg.svg";
 import logoDark from "@images/astronaut-logo-dark.svg";
 import logoLight from "@images/astronaut-logo-light.svg";
@@ -55,34 +56,11 @@ const currentYear = new Date().getFullYear();
           <a href="#aboutUs">About Us</a><span aria-hidden="true"> 🔤</span>
         </li>
         <li>
-          <a href="#gift">Gifts [Optional]</a><span aria-hidden="true">
-            🌊</span
-          >
+          <a href="#gift">Gifts [Optional]</a><span aria-hidden="true"> 🌊</span>
         </li>
         <li>
-          <a href="#submitphotos">Submit Photos</a><span aria-hidden="true"
-          ></span>
-          👀
+          <a href="#submitphotos">Submit Photos</a><span aria-hidden="true">👀</span>
         </li>
-        <!-- <li>
-          <a href="#hooks">Pre-Commit Hooks</a><span aria-hidden="true">
-            🐶</span
-          >
-        </li>
-        <li>
-          <a href="#prettier">Prettier Config</a><span aria-hidden="true">
-            💅</span
-          >
-        </li>
-        <li><a href="#seo">SEO</a><span aria-hidden="true"> 🔍</span></li>
-        <li>
-          <a href="#security">Security Headers</a><span aria-hidden="true">
-            🔒</span
-          >
-        </li>
-        <li>
-          <a href="#usability">Usability</a><span aria-hidden="true"> 🌐</span>
-        </li> -->
       </ul>
     </section>
 
@@ -102,7 +80,7 @@ const currentYear = new Date().getFullYear();
       <br/>
       <h3>The outdoor venue</h3>
       <p>Bonnycastle Crescent. Off Dublin Rd.</p>
-      <p>[[Insert Google Map Visual Here]]</p>
+      <MapDisplay mapQuery="47.58922471265737,-52.72595755286161"/>
     </section>
 
     <section aria-label="Event Details">
