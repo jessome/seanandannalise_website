@@ -4,8 +4,8 @@ export interface Props {
 }
 
 const { mapQuery } = Astro.props;
-
-const googleLink = "https://www.google.com/maps/embed/v1/place?key=AIzaSyCD3FjE5qT-mt3AcJuvktSAzBrEWBpURxU&q=" + mapQuery + "&zoom=18&maptype=satellite";
+const apiKey = import.meta.env.GOOGLE_API_KEY;
+const googleLink = "https://www.google.com/maps/embed/v1/place?key=" + apiKey + "&q=" + mapQuery + "&zoom=18&maptype=satellite";
 ---
 
 <iframe
