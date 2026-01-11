@@ -3,6 +3,10 @@ import { Image } from "astro:assets";
 import ExternalLink from "@utils/ExternalLink.astro";
 import MapDisplay from "@utils/MapDisplay.astro";
 import engagementPhoto from "@images/engagement_shot1.jpg";
+import house from "@images/house.jpg"
+import bender from "@images/puppy.jpg"
+import ixby from "@images/ixby.jpg"
+import rings from "@images/rings.jpg"
 import codeberg from "@images/codeberg.svg";
 import logoDark from "@images/astronaut-logo-dark.svg";
 import logoLight from "@images/astronaut-logo-light.svg";
@@ -47,10 +51,6 @@ const currentYear = new Date().getFullYear();
       <h2>Table of contents</h2>
       <ul id="table-of-contents">
         <li>
-          <a href="./howtogethere">How to Get Here</a>
-          <span aria-hidden="true"> 📥</span>
-        </li>
-        <li>
           <a href="#eventDetails">Event Details</a><span aria-hidden="true"> 💥</span>
         </li>
         <li>
@@ -62,33 +62,25 @@ const currentYear = new Date().getFullYear();
         <li>
           <a href="#submitphotos">Submit Photos</a><span aria-hidden="true">👀</span>
         </li>
+        <li>
+          <a href="#HowToGetToNL">How to Get Here</a><span aria-hidden="true"> 📥</span>
+        </li>
+        <li>
+          <a href="#WhatElse">What Else to be at</a><span aria-hidden="true"> 📥</span>
+        </li>
       </ul>
-    </section>
-
-    <section aria-label="How To Get Here">
-      <p>For Details on how to get to the Island. Click here: <ExternalLink href="./howtogethere" name="How to Get to NL"/> </p>
-      <p>What else to be at. <ExternalLink href="./whatelse" name="Tour Guide"/></p>
-      <br/>
-      <h3>The outdoor venue</h3>
-      <p>Bonnycastle Crescent. Off Dublin Rd.</p>
-      <MapDisplay mapQuery="47.58922471265737,-52.72595755286161"/>
     </section>
 
     <section aria-label="Event Details">
       <h2 id="eventDetails">Event Details <span aria-hidden="true">💥</span></h2>
-      <h3>Phase 1: The Outdoor Ceremony</h3>
-      <p>
-        1pm Bonnycastle Crescent. In the middle of the crescent is a greenspace. We'll have a big tent and chairs setup. 
-        Expect cake and champagne or similar. Maybe some charcuterie.
-      </p>
-      <p>We can host a whole whack of people here. So don't feel shy. We'll even have our dog Bender around.</p>
+      <h3>The Ceremony</h3>
+      <MapDisplay mapQuery="47.58922471265737,-52.72595755286161"/>
+      <p>Location: The Bonnycaste Green @ 1pm</p>
+      <p>We're big fans of our neighbourhood (and our neighbours) so if felt like a natural choice to celebrate our wedding close to home! </p>
+      <p>There will be a tent in case of mild Newfoundland weather. An alternate indoor location will be provided in case of truly inclement weather. </p>
+      <p>The ceremony will be followed by a champagne reception with cake and a few savory options. At some point we’ll disappear for photos, but look forward to visiting with you until then!</p>
       <br/>
-      <h3>Phase 2: When we disappear for photos</h3>
-      <p>
-        I'm not sure when this will be. 4-6?
-      </p>
-      <br/>
-      <h3>Phase 3: The Fancy Dinner</h3>
+      <h3>Dinner</h3>
       <p>
         7pm @ Alt's Blue-Room. This will be catered by Terre. Seasonal and delicious and a mystery to us. If you have any dietary constraints the kitchen can accomodate if they let them know.
       </p>
@@ -101,16 +93,16 @@ const currentYear = new Date().getFullYear();
         Sean and Annalise defied the odds and hatched a sucessfull relationship using "The Apps" at the end of 2018. 
         From there they bought a house - a year + a day after their first date. 
       </p>
-      <p>[[Picture of Sean and Annlise in front of the house]]</p>
+      <Image alt="Photo of House" src={house} height=300 width=600 />   
         
       <p>This was good timing because almost immediately Snowmaggeddon and COVID happened and we weren't allowed to leave it.
         Then there was Bender
       </p>
-      <p>[[Cute puppy pic]]</p>        
+      <Image alt="Photo of Bender" src={bender} height=300 width=600 />       
       <p>And then Ixby</p>
-      <p>[[Picture of Car]]</p>
+      <Image alt="Photo of Ixby" src={ixby} height=300 width=600 />
       <p>And now, admittedly somewhat out of order, this!</p>
-      <p>[[picture of rings]] </p>
+      <Image alt="Photo of Rings" src={rings} height=300 width=600 />
     </section>
 
     <section aria-label="Gifts">
@@ -134,6 +126,15 @@ const currentYear = new Date().getFullYear();
 
         We've set up a [thing] when you can upload photos :) <ExternalLink href="." name="UploadLink"/>
       </p>
+    </section>
+
+    <section aria-label="How to Get to NL">
+      <h2 id="HowToGetToNL">How to Get to NL<span aria-hidden="true">👀</span> </h2>
+      <p>For Details on how to get to the Island. Click here: <ExternalLink href="./howtogethere" name="How to Get to NL"/> </p>
+    </section>
+    <section aria-label="What Else to Be At">
+      <h2 id="WhatElse">What Else?<span aria-hidden="true">👀</span> </h2>
+      <p>We put together a little tour guide for the n00bs. Click here: <ExternalLink href="./whatelse" name="Tour Guide"/> </p>
     </section>
   </main>
 </div>
