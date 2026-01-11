@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import ExternalLink from "@utils/ExternalLink.astro";
 import MapDisplay from "@utils/MapDisplay.astro";
+import engagementPhoto from "@images/engagement_shot1.jpg";
 import codeberg from "@images/codeberg.svg";
 import logoDark from "@images/astronaut-logo-dark.svg";
 import logoLight from "@images/astronaut-logo-light.svg";
@@ -32,7 +33,7 @@ const currentYear = new Date().getFullYear();
       Sean and Annalise
     </h1>
     <h1 class="sr-only">Sean And Annalise are getting Married!</h1>
-    <p>[[PHoto of us goes here]]</p>
+    <Image alt="Photo of Us" src={engagementPhoto} height=600 width=300 />
     <h2>
       Are getting married! 
     </h2>
