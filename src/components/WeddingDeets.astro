@@ -17,30 +17,11 @@ const currentYear = new Date().getFullYear();
 <div class="wrapper">
 
   <header>
-    <!-- <Image
-      alt="Astronaut logo"
-      class="light"
-      src={logoLight}
-      height={logoLight.height}
-      width={logoLight.width}
-      loading="eager"
-    />
-    <Image
-      alt="Astronaut logo"
-      class="dark"
-      src={logoDark}
-      height={logoDark.height}
-      width={logoDark.width}
-      loading="eager"
-    /> -->
     <h1>
-      Sean and Annalise
+      Sean and Annalise are getting married!
     </h1>
     <h1 class="sr-only">Sean And Annalise are getting Married!</h1>
-    <Image alt="Photo of Us" src={engagementPhoto} height=900 width=450 />
-    <h2>
-      Are getting married! 
-    </h2>
+    <Image alt="Photo of Us" src={engagementPhoto} height=900 width=900 />
     <h2>
       Saturday July 11th, 2026
     </h2>
@@ -75,17 +56,17 @@ const currentYear = new Date().getFullYear();
       <h2 id="eventDetails">Event Details <span aria-hidden="true">💥</span></h2>
       <h3>The Ceremony</h3>
       <MapDisplay mapQuery="47.58922471265737,-52.72595755286161"/>
-      <p>Location: The Bonnycaste Green @ 1pm</p>
+      <p>Date: <b>July 11, 2026</b>   Time: <b>1pm</b>   Location: <b>The Bonnycaste Green</b></p>
       <p>We're big fans of our neighbourhood (and our neighbours) so if felt like a natural choice to celebrate our wedding close to home! </p>
       <p>There will be a tent in case of mild Newfoundland weather. An alternate indoor location will be provided in case of truly inclement weather. </p>
+      <p>As an aside: If it wasn't clear, this will taking place on grass, so plan shoes accordingly</p>
       <p>The ceremony will be followed by a champagne reception with cake and a few savory options. At some point we'll disappear for photos, but look forward to visiting with you until then!</p>
-      <p>Please <b>RSVP</b> Here: <ExternalLink href="https://docs.google.com/forms/d/e/1FAIpQLSejQrjmdXUuOycCu8IlEtB2GhV7Vxsc3TKq3Xw3LL7wd9WrUA/viewform?usp=publish-editor" name="Google Forms"/></p>
+      <p>Please <b>RSVP</b> Here: <ExternalLink href="https://docs.google.com/forms/d/e/1FAIpQLSejQrjmdXUuOycCu8IlEtB2GhV7Vxsc3TKq3Xw3LL7wd9WrUA/viewform?usp=publish-editor" name="Google Forms"/> by April 1st</p>
       <br/>
       <h3>Dinner</h3>
       <p>
-        7pm @ Alt's Blue-Room. This will be catered by Terre. Seasonal and delicious and a mystery to us. If you have any dietary constraints the kitchen can accomodate if they let them know.
+        Family and Friends from away have will have received a separate invite to a dinner. More details about that here: <ExternalLink href="" name="Dinner Deets"/> 
       </p>
-      <p>The downside is that we can only host a handful of people at this part - so please don't door-crash unless we explicitly invited you </p>
     </section>
 
     <section aria-label="About Us">
@@ -147,8 +128,12 @@ const currentYear = new Date().getFullYear();
 <style>
   .wrapper {
     margin: 0 auto;
-    max-width: 75%;
+    max-width: 50%;
     padding: 0 var(--space-s);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   img {
