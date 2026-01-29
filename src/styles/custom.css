@@ -1,5 +1,9 @@
 @layer reset, variables, global, custom;
 
 @layer custom {
-  /* Your custom styles go here. Never using !important again 🤗 */
+@media (max-width: 768px) {
+    .wrapper{
+    min-width: 90%;
+    }
+    }
 }
