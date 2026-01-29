@@ -1,7 +1,7 @@
 @layer reset, variables, global, custom;
 
 @layer custom {
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .wrapper{
     min-width: 90%;
     }
